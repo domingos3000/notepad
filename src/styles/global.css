@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    transition: 100ms all;
+}
+
+
+body {
+    @apply bg-white dark:bg-my-black-900
+}
+
+input,
+textarea {
+    @apply bg-transparent
+}
+
+.my-container {
+    @apply w-full max-w-[1216px] mx-auto p-8
+    
+}
+
+.my-div-logo {
+    position: relative;
+    backdrop-filter: blur(24px);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    z-index: 999;
+    justify-content: start;
+
+    @apply bg-my-blue-900/70
+}
+
+
+@media (max-width: 1216px) {
+    /* body {
+        @apply p-4 bg-red-200
+    } */
+}
